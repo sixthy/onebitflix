@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3000;
 
 App.listen(PORT, () => {
     sequelize.authenticate().then(() => {
-        console.log('Conexão com o DB com sucesso')
+        console.log(`Server iniciado com sucesso na porta ${PORT}.`)        
     })
-    console.log(`Server iniciado com sucesso na porta ${PORT}.`)
+    console.log('Conexão com o DB com sucesso')
 })
